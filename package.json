@@ -8,6 +8,9 @@
     "test": "jest",
     "build": "tsc -p ./"
   },
+  "bin": {
+    "csp": "./dist/cli.js"
+  },
   "keywords": [
     "csp",
     "content-security-policy",
@@ -27,7 +30,9 @@
     "ts-node": "^8.2.0",
     "typescript": "^3.5.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "cosmiconfig": "^7.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/frux/csp-header.git"
